@@ -4,16 +4,20 @@
       <the-label></the-label>
     </div>
     <div class="button-pane">
-      <app-button class="button"
-                  @clicked="$store.commit('decrement')"
-                  @clicked-with-ctrl="$store.commit('decrement', 10)"
-                  @clicked-with-shift="$store.commit('decrement', 100)">-
+      <app-button
+        class="button"
+        @clicked="$store.commit('decrement')"
+        @clicked-with-ctrl="$store.commit('decrement', 10)"
+        @clicked-with-shift="$store.commit('decrement', 100)"
+        >-
       </app-button>
 
-      <app-button class="button"
-                  @clicked="$store.commit('increment')"
-                  @clicked-with-ctrl="$store.commit('increment', 10)"
-                  @clicked-with-shift="$store.commit('increment', 100)">+
+      <app-button
+        class="button"
+        @clicked="$store.commit('increment')"
+        @clicked-with-ctrl="$store.commit('increment', 10)"
+        @clicked-with-shift="$store.commit('increment', 100)"
+        >+
       </app-button>
     </div>
     <div class="note">
@@ -23,22 +27,22 @@
 </template>
 
 <script>
-import TheLabel from "./TheLabel"
-import AppButton from "./AppButton"
+import TheLabel from "./TheLabel";
+import AppButton from "./AppButton";
 
 export default {
-  components: {TheLabel, AppButton}
-}
+  components: { TheLabel, AppButton },
+};
 </script>
 
 <style scoped>
 .body {
   padding: 50px;
   margin: 1px;
-  background-color: #FFC53A;
+  background-color: #ffc53a;
   width: 250px;
   border-radius: 10px;
-  text-align: center
+  text-align: center;
 }
 
 .label {

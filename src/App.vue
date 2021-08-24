@@ -4,11 +4,11 @@
 </template>
 
 <script>
-import AppCounterPane from "./components/AppCounterPane"
+import AppCounterPane from "./components/AppCounterPane";
 
 export default {
-  components: {AppCounterPane}
-}
+  components: { AppCounterPane },
+};
 </script>
 
 <style>

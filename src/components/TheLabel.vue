@@ -3,17 +3,15 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import { mapState } from "vuex";
 
 export default {
   computed: {
     ...mapState({
-      value: state => state.count
-    })
-  }
-}
+      value: (state) => state.count,
+    }),
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
