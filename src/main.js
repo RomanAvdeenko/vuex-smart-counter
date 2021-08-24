@@ -9,13 +9,14 @@ const store = createStore({
         }
     },
     mutations: {
-        increment(state) {
-            state.count++
+        increment(state, val = 1) {
+            state.count += val
+        },
+        decrement(state, val = 1) {
+            state.count -= val
         }
     }
 })
-
-store.commit('increment')
 
 const app = createApp(App)
 app.use(store)
